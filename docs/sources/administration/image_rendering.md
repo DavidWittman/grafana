@@ -28,6 +28,8 @@ Rendering images can require a lot of memory, mainly because Grafana creates bro
 
 Alert notifications can include images, but rendering many images at the same time can overload the server where the renderer is running. For instructions of how to configure this, see [concurrent_render_limit]({{< relref "../installation/configuration/#concurrent_render_limit" >}}).
 
+In order to receive images in your alert notifications, you must configure an external image storage provider. Refer to the [external image storage]({{< relref "../installation/configuration/#external-image-storage" >}}) documentation for more information.
+
 ## Install Grafana Image Renderer plugin
 
 The [Grafana image renderer plugin](https://grafana.com/grafana/plugins/grafana-image-renderer) is a plugin that runs on the backend and handles rendering panels and dashboards as PNG images using headless Chrome.
